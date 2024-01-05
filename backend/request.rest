@@ -1,0 +1,26 @@
+GET  http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/65972265b979ac47e83f09b9
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Dimas",
+    "email" : "dimas123@gmail.com",
+    "gender" : "Male"
+}
+
+###
+PATCH  http://localhost:5000/users/65972265b979ac47e83f09b9
+Content-Type: application/json
+
+{
+    "name" : "Dimas",
+    "email" : "dimas123@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/659721dbb979ac47e83f09af
