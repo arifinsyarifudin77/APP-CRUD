@@ -31,7 +31,7 @@ const EditUser = () => {
     e.preventDefault();
     try {
       console.log("Updating user...");
-      await axios.patch(`https://app-crud-api.vercel.app/${id}`, user);
+      await axios.patch(`http://localhost:5000/users/${id}`, user);
       navigate("/");
     } catch (error) {
       console.log("Error updating user:", error);
