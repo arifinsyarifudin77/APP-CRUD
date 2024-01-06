@@ -20,7 +20,7 @@ const EditUser = () => {
 
   const getUsersById = async () => {
     try {
-      const response = await axios.get(`https://app-crud-api.vercel.app/${id}`);
+      const response = await axios.get(`http://localhost:5000/users/${id}`);
       setUser(response.data);
     } catch (error) {
       console.log("Error fetching user by ID:", error);
