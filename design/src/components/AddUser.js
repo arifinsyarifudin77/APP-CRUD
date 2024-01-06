@@ -16,7 +16,7 @@ const AddUser = () => {
   const handleSaveUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://app-crud-api.vercel.app", {
+      await axios.post("http://localhost:5000/users", {
         name: user.name,
         email: user.email,
         gender: user.gender,
