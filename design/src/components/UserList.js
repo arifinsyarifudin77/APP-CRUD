@@ -11,7 +11,7 @@ const UserList = () => {
 
   const getUsers = async () => {
     try {
-      const response = await axios.get('https://app-crud-api.vercel.app/');
+      const response = await axios.get('https://app-crud-api.vercel.app');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -20,7 +20,7 @@ const UserList = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`https://app-crud-api.vercel.app//${userId}`);
+      await axios.delete(`https://app-crud-api.vercel.app/${userId}`);
       getUsers();
     } catch (error) {
       console.error('Error deleting user:', error);
