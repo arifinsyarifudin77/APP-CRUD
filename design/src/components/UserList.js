@@ -20,7 +20,7 @@ const UserList = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`https://app-crud-api.vercel.app/${userId}`);
+      await axios.delete(`http://localhost:5000/users/${userId}`);
       getUsers();
     } catch (error) {
       console.error('Error deleting user:', error);
